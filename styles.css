@@ -1,0 +1,60 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f0e68c;
+  color: #333;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card-content p {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(20% - 20px);
+  }
+}
